@@ -2,7 +2,7 @@ import React from "react";
 import { ScrollParallax } from "react-just-parallax";
 function Hero() {
   return (
-    <ScrollParallax>
+  
       <div className="flex h-[calc(100vh-100px)] justify-center mt-[100px] flex-col px-20 uppercase">
         <div>
           {" "}
@@ -22,7 +22,6 @@ function Hero() {
           </button>
         </div>
       </div>
-    </ScrollParallax>
   );
 }
 

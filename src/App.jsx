@@ -1,3 +1,4 @@
+import { ScrollParallax } from "react-just-parallax";
 import "./App.css";
 import About from "./components/About";
 import Banner from "./components/Banner";
@@ -12,13 +13,15 @@ function App() {
     <>
       <ReactLenis root wrapper duration={1.4} orientation="vertical">
         <div className="landingPage">
+          {" "}
           <Navbar />
-          <Hero />
+          <ScrollParallax>
+            <Hero /> 
+          </ScrollParallax>
         </div>
 
         <About />
         <Banner />
-        <div className="h-screen"></div>
       </ReactLenis>
     </>
   );

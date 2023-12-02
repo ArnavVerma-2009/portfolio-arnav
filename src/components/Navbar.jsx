@@ -10,7 +10,9 @@ function Navbar() {
       <div className="nav">
         <div className="nav-container">
           <div className="navbar">
-            <div className="logo">Arnav</div>
+            <div className="logo">
+              <img src="/logo.svg" alt="logo" className="h-[6vh] w-[6vh]"/>
+            </div>
             <div
               className="menu-toggle"
               onClick={() => {

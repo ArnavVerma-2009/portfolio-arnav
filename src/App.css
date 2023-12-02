@@ -9,7 +9,6 @@ body {
   background-color: #070809; 
   overflow-x: hidden;
   color: white;
-  user-select: none;
   height:auto;
 }
 @font-face {
@@ -34,13 +33,25 @@ body {
 .fortnite{
   font-family: fortnite;
 }
+::-webkit-scrollbar{
+  width: 5px;
+  background-color: #070809;
+}
+::-webkit-scrollbar-thumb{
+  background-color: aliceblue;
+}
 .landingPage{
   height: calc(110vh);
   background-image: url(./../src/assets/background-hero.webp);
   background-size: cover;
   background-position: center center;
-
+  overflow-y: hidden;
 }
 .reveal-type{
   padding: 0 clamp(2rem, 5vw, 16rem);
+}
+.container {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
 }

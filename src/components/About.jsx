@@ -23,13 +23,14 @@ function About() {
       stagger: 0.3,
       transformOrigin: "top",
       duration: 2,
+      color: '#fff'
     });
   });
 
   return (
     <>
       <div className="flex h-screen justify-center items-center w-screen">
-        <div className="reveal-type uppercase md:text-[5vw] 3xl:text-[9vh] geist mt-[100px] benzin leading-[50px] md:leading-[10vh] text-[9vw]     ">
+        <div className="text-[#fff] reveal-type uppercase md:text-[5vw] 3xl:text-[9vh] geist mt-[100px] benzin leading-[50px] md:leading-[10vh] text-[9vw]     ">
           Hi, I am Arnav Verma, a web developer and graphic designer based in
           India. Currently available for commisions.
         </div>
