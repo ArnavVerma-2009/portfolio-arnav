@@ -123,7 +123,7 @@ function Navbar() {
                 >
                   <span>Delhi, IN</span>
                 </div>
-                <div className="nav-social-media">
+                <div className="nav-social-media hidden sm:block">
                   <ul>
                     <li>
                       <a
@@ -150,6 +150,41 @@ function Navbar() {
                           opacity: navOpen ? "1" : "0",
                           transitionDelay: navOpen ? "0.8s" : "0s",
                           fontSize : "1.3vw",
+
+                        }}
+                      >
+                        Youtube
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="nav-social-media block sm:hidden">
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                        className="mr:0 md:mr-8 socialLinks "
+                        style={{
+                          bottom: navOpen ? "0px" : "120px",
+                          color: navOpen ? "white" : "#00000000",
+                          opacity: navOpen ? "1" : "0",
+                          transitionDelay: navOpen ? "0.8s" : "0s",
+                          fontSize : "5vw",
+                        }}
+                      >
+                        Instagram
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                      className="socialLinks"
+                        href="#"
+                        style={{
+                          bottom: navOpen ? "0px" : "120px",
+                          color: navOpen ? "white" : "#00000000",
+                          opacity: navOpen ? "1" : "0",
+                          transitionDelay: navOpen ? "0.8s" : "0s",
+                          fontSize : "5vw",
 
                         }}
                       >
