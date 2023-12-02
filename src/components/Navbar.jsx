@@ -1,7 +1,6 @@
 import { ReactLenis } from "@studio-freight/react-lenis";
 import "./../assets/styles/nav.css";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 function Navbar() {
   const [navOpen, setNavOpen] = useState(false);
