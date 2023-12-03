@@ -14,6 +14,7 @@ body {
 @font-face {
   font-family: benzin;
   src: url("./../fonts/benzin-bold.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: fortnite;
@@ -22,6 +23,7 @@ body {
 @font-face {
   font-family: geist;
   src: url("./../src/assets/fonts/geist.woff2");
+  font-display: swap;
 }
 .benzin{
   font-family: benzin;
@@ -33,13 +35,13 @@ body {
 .fortnite{
   font-family: fortnite;
 }
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
   width: 5px;
   background-color: #070809;
 }
 ::-webkit-scrollbar-thumb{
   background-color: aliceblue;
-}
+} */
 .landingPage{
   height: calc(110vh);
   background-image: url(./../src/assets/background-hero.webp);

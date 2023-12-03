@@ -31,7 +31,7 @@ function Navbar() {
             <div
               className="nav-overlay"
               style={{
-                top: navOpen ? "0" : "-100%",
+                top: navOpen ? "0" : "-100vh",
                 transitionDelay: navOpen ? "0s" : "0s",
               }}
             >

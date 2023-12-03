@@ -15,7 +15,7 @@ function App() {
         <div className="landingPage">
           {" "}
           <Navbar />
-          <ScrollParallax>
+          <ScrollParallax lerpEase={2}>
             <Hero /> 
           </ScrollParallax>
         </div>
