@@ -1,40 +1,50 @@
 import React from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
-import SplitType from "split-type";
-
+import photo from "./../assets/photo.webp";
 function About() {
-  gsap.registerPlugin(ScrollTrigger);
-
-  const splitTypes = document.querySelectorAll(".reveal-type");
-
-  splitTypes.forEach((char, i) => {
-    const text = new SplitType(char, { types: "chars/words" });
-
-    gsap.from(text.chars, {
-      scrollTrigger: {
-        trigger: char,
-        start: "top 80%",
-        end: "top 20%",
-        scrub: true,
-        markers: false,
-      },
-      opacity: 0.2,
-      stagger: 0.3,
-      transformOrigin: "top",
-      duration: 2,
-      color: '#fff'
-    });
-  });
-
   return (
     <>
-      <div className="flex h-screen justify-center items-center w-screen">
-        <div className="text-[#fff] reveal-type uppercase md:text-[5vw] 3xl:text-[9vh] geist mt-[100px] benzin leading-[50px] md:leading-[10vh] text-[9vw]     ">
-          Hi, I am Arnav Verma, a web developer and graphic designer based in
-          India. Currently available for commisions.
+      <div className="mt-20 sm:mt-0 flex h-[120vh] md:h-screen md:justify-between flex-col md:flex-row items-center gap-x-2 gap-y-8  md:px-[10vh] md:py-[6vh] px-[4vh] py-[2vh]">
+        <div
+          style={{
+            backgroundImage: `url(${photo})`,
+          }}
+          className=" h-full text-white md:w-[37%] w-full flex justify-center items-center bg-cover bg-center rounded-xl"
+        ></div>
+        <div className="h-full text-white w-full md:w-[60%]  rounded-xl grid grid-cols-1 md:grid-cols-2 gap-2">
+          <div className="bg-neutral-950 hover:bg-neutral-800 transition hover:border-[#ffffff30] hover:shadow-xl duration-500 text-black border-[0.13vw] flex-col overflow-hidden p-[2vh] border-[#ffffff10] flex justify-center items-center rounded-xl">
+            <div className=" flex text-[#ffffff40] items-center justify-center text-[2.5vw] h-[30%] w-full benzin uppercase">
+              NAME
+            </div>
+            <div className="text-white uppercase  text-center text-[7vh] benzin h-[70%] w-full">
+              ARNAV VERMA{" "}
+            </div>
+          </div>
+          <div className="bg-neutral-950 hover:bg-neutral-800 transition hover:border-[#ffffff30] hover:shadow-xl duration-500 text-black border-[0.13vw] flex-col overflow-hidden p-[2vh] border-[#ffffff10] flex justify-center items-center rounded-xl">
+            <div className=" flex text-[#ffffff40] items-center justify-center text-[2.5vw] h-[30%] w-full benzin uppercase">
+              AGE
+            </div>
+            <div className="text-white uppercase  text-center text-[14vh] benzin h-[70%] w-full">
+              14{" "}
+            </div>
+          </div>
+          <div className="bg-neutral-950 hover:bg-neutral-800 transition hover:border-[#ffffff30] hover:shadow-xl duration-500 text-black border-[0.13vw] flex-col overflow-hidden p-[2vh] border-[#ffffff10] flex justify-center items-center rounded-xl">
+            <div className=" flex text-[#ffffff40] items-center justify-center text-[2.5vw] h-[30%] w-full benzin uppercase">
+              hOBBY
+            </div>
+            <div className="text-white uppercase  text-center text-[7vh] benzin h-[70%] w-full">
+              CODING <br /> studying{" "}
+            </div>
+          </div>
+          <div className="bg-neutral-950 hover:bg-neutral-800 transition hover:border-[#ffffff30] hover:shadow-xl duration-500 text-black border-[0.13vw] flex-col overflow-hidden p-[2vh] border-[#ffffff10] flex justify-center items-center rounded-xl">
+            <div className=" flex text-[#ffffff40] items-center justify-center text-[2.5vw] h-[30%] w-full benzin uppercase">
+              Experience
+            </div>
+            <div className="text-white uppercase  text-center text-[12vh] benzin h-[70%] w-full">
+              2Yr
+            </div>
+          </div>
         </div>
-      </div>
+      </div>{" "}
     </>
   );
 }

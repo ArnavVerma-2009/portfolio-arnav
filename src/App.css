@@ -35,13 +35,13 @@ body {
 .fortnite{
   font-family: fortnite;
 }
-/* ::-webkit-scrollbar{
+::-webkit-scrollbar{
   width: 5px;
   background-color: #070809;
 }
 ::-webkit-scrollbar-thumb{
   background-color: aliceblue;
-} */
+}
 .landingPage{
   height: calc(110vh);
   background-image: url(./../src/assets/background-hero.webp);
