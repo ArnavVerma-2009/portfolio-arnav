@@ -1,31 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import SplitType from "split-type";
 
 function Intro() {
-  gsap.registerPlugin(ScrollTrigger);
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
 
-  const splitTypes = document.querySelectorAll(".reveal-type");
+    const splitTypes = document.querySelectorAll(".reveal-type");
 
-  splitTypes.forEach((char, i) => {
-    const text = new SplitType(char, { types: "chars/words" });
+    splitTypes.forEach((char, i) => {
+      const text = new SplitType(char, { types: "chars/words" });
 
-    gsap.from(text.chars, {
-      scrollTrigger: {
-        trigger: char,
-        start: "top 80%",
-        end: "top 20%",
-        scrub: true,
-        markers: false,
-      },
-      opacity: 0.2,
-      stagger: 0.3,
-      transformOrigin: "top",
-      duration: 2,
-      color: "#fff",
+      gsap.from(text.chars, {
+        scrollTrigger: {
+          trigger: char,
+          start: "top 80%",
+          end: "top 20%",
+          scrub: true,
+          markers: false,
+        },
+        opacity: 0.2,
+        stagger: 0.3,
+        transformOrigin: "top",
+        duration: 2,
+        color: "#fff",
+      });
     });
-  });
+  }, []);
 
   return (
     <>

@@ -3,7 +3,7 @@ import photo from "./../assets/photo.webp";
 function About() {
   return (
     <>
-      <div className="mt-20 sm:mt-0 flex h-[120vh] md:h-screen md:justify-between flex-col md:flex-row items-center gap-x-2 gap-y-8  md:px-[10vh] md:py-[6vh] px-[4vh] py-[2vh]">
+      {/* <div className="mt-20 sm:mt-0 flex h-[120vh] md:h-screen md:justify-between flex-col md:flex-row items-center gap-x-2 gap-y-8  md:px-[10vh] md:py-[6vh] px-[4vh] py-[2vh]">
         <div
           style={{
             backgroundImage: `url(${photo})`,
@@ -44,7 +44,37 @@ function About() {
             </div>
           </div>
         </div>
-      </div>{" "}
+      </div>{" "} */}
+
+      <section className=" sm:mt-0 mt-20 AboutDiv lg:p-12 ">
+        <div className="AboutContainer">
+          <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2  lg:py-16 lg:px-6">
+            <div className="grid grid-cols-1 gap-4 mt-8">
+              <img
+                className="w-full rounded-lg "
+                src={photo}
+                alt="office content 1"
+              />{" "}
+              <div className="absolute z-10 lg:bg-gradient-to-l bg-gradient-to-t from-[#005fc4] from-20% via-15% via-[#005fc4] h-full" />
+            </div>{" "}
+            <div className="font-light text-white sm:text-lg ">
+              <h2 className="uppercase benzin mb-12 sm:text-4xl text-3xl tracking-tight font-extrabold  z-[1000]  text-white">
+                It IS MY WORld and you all are living in it
+              </h2>
+              <p className="mb-4 text-justify inter ">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita esse ut exercitationem blanditiis suscipit laboriosam rerum similique deleniti ex! 
+                <br />
+                <br />
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, id. Voluptates sequi neque doloribus tempora aliquam consequatur veritatis aspernatur, voluptatum nostrum quidem culpa id earum voluptatibus, quisquam minima iste corporis!
+        Quam modi pariatur fugit asperiores odit, reiciendis quidem molestias ipsam rem! Voluptates alias tenetur assumenda, voluptate explicabo consectetur in esse accusamus dolor qui. Nostrum, aspernatur explicabo. Quos sed exercitationem molestias.
+                <br />
+                <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, assumenda quibusdam fugiat hic enim tenetur fuga sapiente sit. Voluptates cum in odit numquam placeat quod iure odio sint magni totam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
