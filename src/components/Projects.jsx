@@ -13,18 +13,6 @@ const EventPage = () => {
       href: "https://wartex.co.in",
       imageLink: `${wartexImg}`,
     },
-    {
-    //   Name: "Ragnarok",
-      id: 14,
-      href: "/Events/Ragnarok",
-      //   imageLink: `${Ragnarok}`,
-    },
-    {
-      Name: "Minecraft",
-      id: 9,
-      href: "/Events/Minecraft",
-      //   imageLink: `${Minecraft}`,
-    },
   ];
 
   return (

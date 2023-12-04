@@ -11,7 +11,7 @@ function Navbar() {
         <div className="nav-container">
           <div className="navbar">
             <div className="logo">
-              <img src="/logo.svg" alt="logo" className="h-[6vh] w-[6vh]"/>
+              <img src="/logo.svg" alt="logo" className="h-[6vh] w-[6vh]" />
             </div>
             <div
               className="menu-toggle"
@@ -35,21 +35,23 @@ function Navbar() {
                 transitionDelay: navOpen ? "0s" : "0s",
               }}
             >
-            <div>
-            <div
-              className="menu-toggle flex justify-end  translate-x-10 -translate-y-10"
-              onClick={() => {
-                setNavOpen(!navOpen);
-              }}
-            >
-              <div className={navOpen ? "hamBox hamBoxOpen" : "hamBox"}>
-                <span className={navOpen ? "lineTop spin" : "lineTop"}></span>
-                <span
-                  className={navOpen ? "lineBottom spin" : "lineBottom"}
-                ></span>
+              <div>
+                <div
+                  className="menu-toggle flex justify-end  translate-x-10 -translate-y-10"
+                  onClick={() => {
+                    setNavOpen(!navOpen);
+                  }}
+                >
+                  <div className={navOpen ? "hamBox hamBoxOpen" : "hamBox"}>
+                    <span
+                      className={navOpen ? "lineTop spin" : "lineTop"}
+                    ></span>
+                    <span
+                      className={navOpen ? "lineBottom spin" : "lineBottom"}
+                    ></span>
+                  </div>
+                </div>
               </div>
-            </div>
-            </div>
               <ul className="nav-links">
                 <li className="nav-item">
                   <a
@@ -120,7 +122,7 @@ function Navbar() {
                     color: navOpen ? "white" : "#00000000",
                     opacity: navOpen ? "1" : "0",
                     transitionDelay: navOpen ? "0.8s" : "0s",
-                    fontSize : "1.3vw"
+                    fontSize: "1.3vw",
                   }}
                 >
                   <span>Delhi, IN</span>
@@ -129,14 +131,14 @@ function Navbar() {
                   <ul>
                     <li>
                       <a
-                        href="#"
+                        href="https://www.instagram.com/arnav.tsx/"
                         className="mr:0 md:mr-8 socialLinks hidden sm:block"
                         style={{
                           bottom: navOpen ? "0px" : "120px",
                           color: navOpen ? "white" : "#00000000",
                           opacity: navOpen ? "1" : "0",
                           transitionDelay: navOpen ? "0.8s" : "0s",
-                          fontSize : "1.3vw",
+                          fontSize: "1.3vw",
                         }}
                       >
                         Instagram
@@ -144,15 +146,14 @@ function Navbar() {
                     </li>
                     <li>
                       <a
-                      className="socialLinks hidden sm:block"
+                        className="socialLinks hidden sm:block"
                         href="#"
                         style={{
                           bottom: navOpen ? "0px" : "120px",
                           color: navOpen ? "white" : "#00000000",
                           opacity: navOpen ? "1" : "0",
                           transitionDelay: navOpen ? "0.8s" : "0s",
-                          fontSize : "1.3vw",
-
+                          fontSize: "1.3vw",
                         }}
                       >
                         Youtube
@@ -164,14 +165,14 @@ function Navbar() {
                   <ul>
                     <li>
                       <a
-                        href="#"
+                        href="https://www.instagram.com/arnav.tsx/"
                         className="mr:0 md:mr-8 socialLinks "
                         style={{
                           bottom: navOpen ? "0px" : "120px",
                           color: navOpen ? "white" : "#00000000",
                           opacity: navOpen ? "1" : "0",
                           transitionDelay: navOpen ? "0.8s" : "0s",
-                          fontSize : "5vw",
+                          fontSize: "5vw",
                         }}
                       >
                         Instagram
@@ -179,18 +180,17 @@ function Navbar() {
                     </li>
                     <li>
                       <a
-                      className="socialLinks"
+                        className="socialLinks"
                         href="#"
                         style={{
                           bottom: navOpen ? "0px" : "120px",
                           color: navOpen ? "white" : "#00000000",
                           opacity: navOpen ? "1" : "0",
                           transitionDelay: navOpen ? "0.8s" : "0s",
-                          fontSize : "5vw",
-
+                          fontSize: "5vw",
                         }}
                       >
-                        Youtube
+                        Github
                       </a>
                     </li>
                   </ul>

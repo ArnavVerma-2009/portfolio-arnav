@@ -61,15 +61,23 @@ function About() {
               <h2 className="uppercase benzin my-12   sm:text-4xl text-3xl tracking-tight font-extrabold  z-[1000]  text-white">
                 It IS MY WORld and you all are living in it
               </h2>
-              <p className="mb-4 text-justify inter ">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita esse ut exercitationem blanditiis suscipit laboriosam rerum similique deleniti ex! 
+              <p className="mb-4 text-justify geist-para font-bold ">
+                I am Arnav Verma, currently studying in high school. I show a
+                keen interest in frontend web development and graphic designing.
                 <br />
                 <br />
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, id. Voluptates sequi neque doloribus tempora aliquam consequatur veritatis aspernatur, voluptatum nostrum quidem culpa id earum voluptatibus, quisquam minima iste corporis!
-        Quam modi pariatur fugit asperiores odit, reiciendis quidem molestias ipsam rem! Voluptates alias tenetur assumenda, voluptate explicabo consectetur in esse accusamus dolor qui. Nostrum, aspernatur explicabo. Quos sed exercitationem molestias.
+                I am a young lad in the field, expressing my creative and modern
+                designs through my work, I am currently working with wartex, the
+                biggest interschool techfest in new Delhi. I have made several
+                game changing contributions to the functioning and popularity of
+                the event constantly making the website & posters with my fellow
+                colleagues. I show a great spirit in work and encourage
+                communication among my fellow mates.
                 <br />
-                <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, assumenda quibusdam fugiat hic enim tenetur fuga sapiente sit. Voluptates cum in odit numquam placeat quod iure odio sint magni totam.
+                <br />I am looking forward to do some commision work to improve
+                my skills, gain experience in the industry and be introduced to
+                work culture in companies giving me knowledge of the latest
+                trends in the industry.
               </p>
             </div>
           </div>

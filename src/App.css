@@ -22,13 +22,13 @@ body {
   height:auto;
 }
 @font-face {
+  font-family: geist-para;
+  src: url('./../fonts/geist-para.woff2');
+}
+@font-face {
   font-family: benzin;
   src: url("./../fonts/benzin-bold.ttf");
   font-display: swap;
-}
-@font-face {
-  font-family: fortnite;
-  src: url("./../src/assets/fonts/fortnite.otf");
 }
 @font-face {
   font-family: geist;
@@ -41,9 +41,8 @@ body {
 .geist{
   font-family: geist;
 }
-
-.fortnite{
-  font-family: fortnite;
+.geist-para{
+  font-family: geist-para;
 }
 ::-webkit-scrollbar{
   width: 5px;
@@ -141,8 +140,8 @@ body {
   }
 }
 .parent:hover .screen-overlay {
-  /* opacity: 0; */
-  transform: translateY(100%);
+  opacity: 0.1;
+  /* transform: translateY(100%); */
 }
 .screen-overlay {
   background: linear-gradient(
