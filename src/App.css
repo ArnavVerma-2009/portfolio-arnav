@@ -67,3 +67,155 @@ body {
   width: 100vw;
   overflow: hidden;
 }
+
+
+:root {
+  --background-rgb: 29 30 34;
+
+  --blue-rgb: 255 255 255;
+  --primary-rgb: var(--blue-rgb);
+
+  --blob-color-1: rgb(var(--blue-rgb));
+  --blob-color-2: dodgerblue;
+
+  --width: clamp(500px, 50vw, 500px);
+  --height: clamp(400px, 40vw, 400px);
+}
+
+* {
+  box-sizing: border-box;
+}
+/* 
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: rgb(var(--background-rgb));
+  margin: 0rem;
+} */
+
+.screen {
+  width: 500px;
+  display: flex;
+  border: 3px solid rgb(var(--primary-rgb) / 80%);
+  aspect-ratio: 10 / 16;
+  border-radius: 1rem;
+  background-color: rgb(var(--primary-rgb) / 15%);
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+
+.screen:after,
+.screen:before {
+  content: "";
+  height: 5px;
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  translate: -50% 0%;
+  background-color: white;
+}
+
+.screen:before {
+  width: 15%;
+  top: 0rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.screen:after {
+  width: 25%;
+  bottom: 0rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+@keyframes pan-overlay {
+  from {
+    background-position: 0% 0%;
+  }
+
+  to {
+    background-position: 0% -100%;
+  }
+}
+.parent:hover .screen-overlay {
+  /* opacity: 0; */
+  transform: translateY(100%);
+}
+.screen-overlay {
+  background: linear-gradient(
+    #eeeeee,
+    #eeeeee 3px,
+    transparent 3px,
+    transparent 9px
+  );
+  opacity: 0.6;
+  mix-blend-mode: color-burn;
+  background-size: 100% 9px;
+  height: 100%;
+  width: 100%;
+  animation: pan-overlay 22s infinite linear;
+  position: absolute;
+  z-index: -1;
+  left: 0px;
+  top: 0px;
+  transition: all 1s;
+}
+
+@keyframes pan-image {
+  0% {
+    background-position: 36% 42%;
+    background-size: 200%;
+  }
+
+  20% {
+    background-position: 30% 35%;
+    background-size: 200%;
+  }
+
+  20.0001% {
+    /* -- View 2 -- */
+    background-position: 60% 85%;
+    background-size: 500%;
+  }
+
+  40% {
+    background-position: 49% 81%;
+    background-size: 500%;
+  }
+
+  40.0001% {
+    /* -- View 3 -- */
+    background-position: 80% 42%;
+    background-size: 300%;
+  }
+
+  60% {
+    background-position: 84% 33%;
+    background-size: 300%;
+  }
+
+  60.0001% {
+    /* -- View 4 -- */
+    background-position: 0% 0%;
+    background-size: 300%;
+  }
+
+  80% {
+    background-position: 15% 4%;
+    background-size: 300%;
+  }
+
+  80.0001% {
+    /* -- View 5 -- */
+    background-position: 80% 10%;
+    background-size: 300%;
+  }
+
+  100% {
+    background-position: 72% 14%;
+    background-size: 300%;
+  }
+}

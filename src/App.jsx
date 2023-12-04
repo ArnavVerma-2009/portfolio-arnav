@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
 import Intro from "./components/Intro";
 import About from "./components/About";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
         <Intro />
         <Banner />
         <About /> 
-
+        <Projects />
         <div className="h-[20vh]"></div>
       </ReactLenis>
     </>

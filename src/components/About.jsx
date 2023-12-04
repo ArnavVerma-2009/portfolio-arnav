@@ -58,7 +58,7 @@ function About() {
               <div className="absolute z-10 lg:bg-gradient-to-l bg-gradient-to-t from-[#005fc4] from-20% via-15% via-[#005fc4] h-full" />
             </div>{" "}
             <div className="font-light text-white sm:text-lg ">
-              <h2 className="uppercase benzin mb-12 sm:text-4xl text-3xl tracking-tight font-extrabold  z-[1000]  text-white">
+              <h2 className="uppercase benzin my-12   sm:text-4xl text-3xl tracking-tight font-extrabold  z-[1000]  text-white">
                 It IS MY WORld and you all are living in it
               </h2>
               <p className="mb-4 text-justify inter ">
