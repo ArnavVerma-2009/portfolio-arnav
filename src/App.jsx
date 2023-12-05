@@ -12,23 +12,25 @@ import AnimatedCursor from "react-animated-cursor";
 function App() {
   return (
     <>
-      <AnimatedCursor
-        innerSize={8}
-        outerSize={35}
-        innerScale={1}
-        outerScale={2}
-        innerAlpha={1}
-        outerAlpha={1}
-        hasBlendMode={true}
-        innerStyle={{
-          backgroundColor: "#ffffff",
-        }}
-        outerStyle={{
-          border: "3px solid #ffffff80",
-          background: "transparent",
-          backdropFilter: "blur(3px)"
-        }}
-      />
+      <div className="hidden md:block">
+        <AnimatedCursor
+          innerSize={8}
+          outerSize={35}
+          innerScale={1}
+          outerScale={2}
+          innerAlpha={1}
+          outerAlpha={1}
+          hasBlendMode={true}
+          innerStyle={{
+            backgroundColor: "#ffffff",
+          }}
+          outerStyle={{
+            border: "3px solid #ffffff80",
+            background: "transparent",
+            backdropFilter: "blur(3px)",
+          }}
+        />
+      </div>
       <ReactLenis root wrapper duration={1.4} orientation="vertical">
         <div className="landingPage">
           {" "}

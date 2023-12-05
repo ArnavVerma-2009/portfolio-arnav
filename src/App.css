@@ -46,7 +46,7 @@ body {
 }
 ::-webkit-scrollbar{
   width: 5px;
-  background-color: #070809;
+  background-color: #000000;
 }
 ::-webkit-scrollbar-thumb{
   background-color: aliceblue;

@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 // import styles from "./../assets/styles/eventPage.css"
 import wartexImg from "./../assets/ss.png";
+import regera from "./../assets/Regera.webp";
+import shutter from "./../assets/shutter.webp";
 import Aos from "aos";
 // import { Link } from "react-router-dom";
 
@@ -8,60 +10,78 @@ const EventPage = () => {
   Aos.init();
   const EventsMetaData = [
     {
-    //   Name: "Cryptic Hunt",
+      //   Name: "Cryptic Hunt",
       id: 1,
       href: "https://wartex.co.in",
       imageLink: `${wartexImg}`,
+    },
+    {
+      //   Name: "Cryptic Hunt",
+      id: 1,
+      href: "https://wartex.co.in",
+      imageLink: `${regera}`,
     },
   ];
 
   return (
     <>
       {/* <Transition> */}
-      <div className="p-4 md:pt-40 pt-20   ">
+      <div className=" md:pt-10 pt-20   ">
         <section className="">
-          <div className=" h-[24em] md:h-[32em] ">
+          <div className=" h-[34.54vh] md:h-[47.392vh] md:mb-28">
             <div className="container px-6  md:py-10 mx-auto">
               <h1
-                className="mb-2 text-4xl text-[white] benzin   text-center font-semibold uppercase tracking-px heading"
+                className="mb-2 md:text-[3.125vw] text-[8vw] text-[white] benzin   text-center font-semibold uppercase tracking-px heading"
                 data-aos="fade-up"
               >
                 THE stuff i cook
               </h1>
 
               <p
-                className="mb-14 text-sm text-white text-center font-semibold uppercase tracking-px"
+                className="mb-14 md:text-[1vw] text-[3vw] text-white text-center font-semibold uppercase tracking-px"
                 data-aos="fade-up"
               >
-                THE Mystical pieces of artwork
+                THE work
               </p>
             </div>
           </div>
 
-          <div className=" relative px-6 py-10 -mt-72 sm:-mt-80 md:-mt-96">
-            <div className=" md:grid-cols-1 grid-cols-1 place-items-center gap-y-12   grid mt-8 xl:mt-16">
-              {EventsMetaData.map((data) => (
-                <div
-                  key={data.id}
-                  className="relative z-[1] parent group EventMainCard  h-[40vh] w-full md:h-[100vh] md:mt-12 mt-4"
+          <div className="relative  py-10 -mt-52 sm:-mt-80 md:-mt-76">
+            <div className=" md:grid-cols-1 grid-cols-1 place-items-center grid mt-8 xl:mt-16">
+              <div className="sm:border-b-4 relative z-[1] parent group EventMainCard  h-[40vh] w-[100vw] md:h-[100vh]">
+                <a
+                  href="https://www.wartex.co.in"
+                  style={{
+                    backgroundImage: `url(${wartexImg})`,
+                    backgroundSize: "cover",
+                    // backgroundPosition : "center  "
+                  }}
+                  className={`bg-center group  h-full w-screen  block bg-[#ffffff04] overflow-hidden drop-shadow-[0_0px_0px_#007bc4] sm:my-0 aspect-[1/1]`}
                 >
-                  <a
-                    href={data.href}
-                    data-aos="fade-up"
-                    data-aos-duration={data.delay}
-                    style={{
-                      backgroundImage: `url(${data.imageLink})`,
-                      backgroundSize: "cover",
-                    //   backgroundPosition : "center  "
-                    }}
-                    className="bg-center group  h-full w-full  block bg-[#ffffff04] overflow-hidden drop-shadow-[0_0px_0px_#007bc4] sm:my-0 aspect-[1/1] rounded-xl   sm:border-[4px] border-[2px] border-[#007bc4] "
-                  >
-                    <div className="screen-overlay"></div>
-                    
-                  </a>
-                </div>
-              ))}
+              
+                </a>
+              </div>
             </div>
+            <div className="flex flex-col md:flex-row">
+                <div
+                  className="relative z-[1] sm:border-r-4 sm:border-b-4 overflow-hidden col-span-2 parent group EventMainCard  h-auto md:h-[100vh] w-screen md:w-[70%] bg-red-100 "
+                  style={{
+                    // backgroundPosition : "center  ",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                >
+                  <img src={regera} alt="regera" className="h-auto md:h-full w-[100vw] md:w-full" />
+                </div>
+                <div
+                  className="relative z-[1]  sm:border-b-4  overflow-hidden parent group EventMainCard  h-[auto] md:h-[100vh]  flex justify-end"
+                  style={{
+                    // backgroundPosition : "center  ",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                >
+                  <img src={shutter} alt="regera" className="h-auto md:h-[100vh]" />
+                </div>
+              </div>
           </div>
         </section>
       </div>
