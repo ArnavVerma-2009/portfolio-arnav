@@ -51,13 +51,13 @@ body {
 ::-webkit-scrollbar-thumb{
   background-color: aliceblue;
 }
-.landingPage{
+/* .landingPage{
   height: calc(110vh);
   background-image: url(./../src/assets/background-hero.webp);
   background-size: cover;
   background-position: center center;
   overflow-y: hidden;
-}
+} */
 .reveal-type{
   padding: 0 clamp(2rem, 5vw, 16rem);
 }

@@ -8,44 +8,79 @@ import Intro from "./components/Intro";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import AnimatedCursor from "react-animated-cursor";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer";
+import image from "./../src/assets/background-hero.webp";
 function App() {
   return (
     <>
-      <div className="hidden md:block">
-        <AnimatedCursor
-          innerSize={8}
-          outerSize={35}
-          innerScale={1}
-          outerScale={2}
-          innerAlpha={1}
-          outerAlpha={1}
-          hasBlendMode={true}
-          innerStyle={{
-            backgroundColor: "#ffffff",
-          }}
-          outerStyle={{
-            border: "3px solid #ffffff80",
-            background: "transparent",
-            backdropFilter: "blur(3px)",
-          }}
-        />
-      </div>
-      <ReactLenis root wrapper duration={1.4} orientation="vertical">
-        <div className="landingPage">
+      <BrowserRouter>
+        {" "}
+        <ReactLenis root wrapper duration={1.4} orientation="vertical">
           {" "}
-          <Navbar />
-          {/* <ScrollParallax lerpEase={2}> */}
-          <Hero />
-          {/* </ScrollParallax> */}
-        </div>
+          <AnimatedCursor
+            innerSize={8}
+            outerSize={35}
+            innerScale={1}
+            outerScale={2}
+            innerAlpha={1}
+            outerAlpha={1}
+            hasBlendMode={true}
+            innerStyle={{
+              backgroundColor: "#ffffff",
+            }}
+            outerStyle={{
+              border: "3px solid #ffffff80",
+              background: "transparent",
+              backdropFilter: "blur(3px)",
+            }}
+          />
+          <Routes>
+            {" "}
+            <Route
+              index
+              element={
+                <>
+                  {" "}
+                  <div className="landingPage">
+                    <ScrollParallax>
+                      <div
+                        className="h-screen w-screen"
+                        style={{
+                          backgroundImage: `url(${image})`,
+                          backgroundSize: "cover",
+                          backgroundPosition : "center center"
+                        }}
+                      >
+                      {/* <img src={image} alt="bg-image" className="absolute h-screen w-screen" /> */}
+                        {" "}
+                        <Navbar />
+                        <Hero />
+                      </div>
+                    </ScrollParallax>
+                  </div>
+                  <Intro />
+                  <Banner />
+                  <About />
+                  <Projects />
+                  <div className="h-[20vh]"></div>
+                </>
+              }
+            ></Route>
+            <Route
+              path="/about"
+              element={
+                <>
+                  <About />
 
-        <Intro />
-        <Banner />
-        <About />
-        <Projects />
-        <div className="h-[20vh]"></div>
-      </ReactLenis>
+                  <div className="h-[20vh]"></div>
+                </>
+              }
+            ></Route>
+          </Routes>{" "}
+        </ReactLenis>{" "}
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }

@@ -94,7 +94,7 @@ function Navbar() {
                       transitionDelay: navOpen ? "0.6s" : "0s",
                     }}
                   >
-                    Projects
+                    ARTICLES
                   </a>
                   <div className="nav-item-wrapper"></div>
                 </li>
@@ -147,7 +147,7 @@ function Navbar() {
                     <li>
                       <a
                         className="socialLinks hidden sm:block"
-                        href="#"
+                        href="https://github.com/ArnavVerma-2009"
                         style={{
                           bottom: navOpen ? "0px" : "120px",
                           color: navOpen ? "white" : "#00000000",
@@ -156,7 +156,7 @@ function Navbar() {
                           fontSize: "1.3vw",
                         }}
                       >
-                        Youtube
+                        Github
                       </a>
                     </li>
                   </ul>
@@ -181,7 +181,7 @@ function Navbar() {
                     <li>
                       <a
                         className="socialLinks"
-                        href="#"
+                        href="https://github.com/ArnavVerma-2009"
                         style={{
                           bottom: navOpen ? "0px" : "120px",
                           color: navOpen ? "white" : "#00000000",
